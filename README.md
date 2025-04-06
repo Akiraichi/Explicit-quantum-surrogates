@@ -30,7 +30,7 @@ the well-trained kernel model.
 
 ## Dependencies
 
-The code is built and tested with Python 3 (Python 3.9+ recommended).
+The code is built and tested with Python 3 (Python 3.10+ recommended).
 All required packages are listed in **`requirements.txt`**. You can install them with pip as shown below.
 
 ## Installation
@@ -46,8 +46,23 @@ All required packages are listed in **`requirements.txt`**. You can install them
    ```bash
    pip install -r requirements.txt
    ```  
-   This will install all necessary libraries. (Note: Qulacs may require a working C++ build environment, but pip will
-   usually provide a pre-built wheel.)
+   This will install all necessary libraries.
+
+## Datasets
+
+- **MNISQ Dataset**  
+  This dataset encodes MNIST images into 10-qubit quantum states. It is the default option supported in this
+  repository.  
+  When using the scripts in this repository, the code will automatically fetch or generate the MNISQ data via the
+  `mnisq` library if it is not already present.
+
+- **VQE-Generated Dataset**  
+  If you wish to use the VQE-generated dataset, you will need to **download it manually**
+  from [https://github.com/Qulacs-Osaka/VQE-generated-dataset](https://github.com/Qulacs-Osaka/VQE-generated-dataset).  
+  After downloading, place the data in a directory accessible to the scripts in this repository, and modify the relevant
+  settings (for example, in `svm_util.select_svm_condition()`) to specify the file paths and loading procedure.  
+  This repository does **not** provide an automatic download or handling mechanism for the VQE-generated data. Make sure
+  the dataset files are placed in the correct location before running any training or inference scripts.
 
 ## Repository Structure and Usage
 
