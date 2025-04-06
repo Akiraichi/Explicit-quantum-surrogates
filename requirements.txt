@@ -1,0 +1,28 @@
+#
+numpy
+pandas
+scipy
+
+# plot
+matplotlib
+
+# data save
+joblib
+
+# machine learning
+scikit-learn
+jax
+optax
+cvxpy
+
+# quantum circuit simulater
+qulacs
+
+# dataset
+mnisq
+
+# check type
+jaxtyping
+
+# type check tool
+beartype
