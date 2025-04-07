@@ -26,7 +26,7 @@ from qnn_util.qnn_utility import (
 
 def main(exp_name: str, circuit_type: str, target_label: int) -> None:
     """
-    Train a Quantum Neural Network (QNN) using an Eigenvalue Quantum Support (EQS) circuit.
+    Train a Quantum Neural Network (QNN) using an EQS circuit.
 
     This function performs the following steps:
     1. Get QNN conditions based on experiment name, circuit type, and target label
